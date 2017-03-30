@@ -1,19 +1,7 @@
-<style>
-div {
-    background-color: lightgrey;
-    width: 300px;
-    border: 25px solid green;
-    padding: 25px;
-    margin: 25px;
+title{
+    text-align:center;
+    text-decoration: underline;
 }
-</style>
-<div>
-Sign Up for Clubs
-</div>
-<p style="border-bottom:1px solid black;">This paragraph has a bottom border.</p>
-
-
-</body>
-</html>
+    
 
 
