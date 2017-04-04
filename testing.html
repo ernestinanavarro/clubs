@@ -4,10 +4,78 @@
 		<h1 align="center">Experience Dv Clubs</h1>
 	</header>
 	<hr>	
-	<img src="" alt="Mountain View" style="width:304px;height:228px;">
-	<p lang="en">this is general infromation about clubs here in the Dv Community...</p>
+	<img src="" alt="picture icon.png" style="width:304px;height:228px;">
+	<p>Missed the Club Fair<br>Don't worry<br>Here in this page, you can acess information about all the clubs here at Da Vinci.Once you figured out what clubs you want to take part in, you can go and sign-up here in this page</p>
 	
-	<h3>The Clubs</h3>
 	<hr>
-    		
+	
+	<p>The Clubs</p>
+	<hr width="60%">
+
+<div class="w3-container">
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="img_fjords.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+   Dv Debate Club
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_lights.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+   Anime Club
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Archery Club
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_forest.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Vocal 101
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+   Girls Code 
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</html>
+</body>
+
 				
