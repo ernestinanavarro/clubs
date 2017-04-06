@@ -19,37 +19,32 @@ angular.module('app', ['cfp.hotkeys', 'ngAnimate'])
     	$scope.forests = [
             {
                 'rank' : 1,
-            	'name' : 'Sagano Bamboo Forest',
-                'desc' : 'A magnificent Bamboo forest in the district of Arashiyama, west to Kyoto, Japan.',
-                'location' : 'Kyoto, Japan',
+            	'name' : 'Debate Club',
+                'desc' : 'Enjoy having a good arguement or proving people wrong, then take part of this club. You will learn how to have an effective debate and learn how to improve on yout speaking skills. ',
                 'img' : ''
         	},
             {
                 'rank' : 2,
-            	'name' : 'Giant Sequoia National Monument',
-                'desc' : 'Located in the southern Sierra Nevada mountains of California. The forest is named for the majestic Giant Sequoia  trees which populate 38 distinct groves within the boundaries of the forest. The Sequoia National Forest covers 4,829 sq km (1,865 sq mi).',
-                'location' : 'California, United States',
+            	'name' : 'Anime Club',
+                'desc' : '',
                 'img' : ''
         	},
             {
                 'rank' : 3,
-            	'name' : 'Redwood National Park',
-                'desc' : 'Also in California, The Redwood National parks is a combination of four parks that together protect 45% of all remaining coast redwood (Sequoia sempervirens) old-growth forests, totaling at least 158 square km. These trees are the tallest and one of the most massive tree species on Earth.',
-                'location' : 'California, United States',
+            	'name' : 'Archery Club',
+                'desc' : 'You will learn how to participate in Archery. The fundamentals of archery and how to use and care for equipment, basic safety, techniques and fundamentals of shooting but best of all have fun.'
                 'img' : ''
         	},
             {
                 'rank' : 4,
-            	'name' : 'Black Forest',
-                'desc' : 'Schwarzwald or “Black Forest” is a wooded mountain range in Baden-Württemberg, southwestern Germany. It is bordered by the Rhine valley to the west and south. The name “Black Forest” was given by the Romans who referred to the forest blocking out most of the sunlight from getting inside the forest by the dense growth of conifers.',
-                'location' : 'Germany',
+            	'name' : 'Vocals 101',
+                'desc' : '',
                 'img' : ''
         	},
             {
                 'rank' : 5,
-            	'name' : 'Crooked Forest',
-                'desc' : 'A grove of oddly-shaped pine trees. This young forest was planted around 1930 and has about 400 pines. It is generally believed that some form of human tool or technique was used to make the trees grow this way, but the method and motive are not currently known. Some believe that the woods were deliberately grown this way to make “Compass Timbers”, or trees that are deliberately shaped for the purpose of using those odd shapes in ship building. Another theory is that tanks from WWII are the cause, rolling over the young trees snapping the stem, but still surviving, forcing them to grow in the direction they were ran over.',
-                'location' : 'Poland',
+            	'name' : 'Girl Code',
+                'desc' : 'Here girls who have a passion for code will come together. You will work on special projects to help you learn more with using different programming launguages.',
                 'img' : '
         	}
         ];
