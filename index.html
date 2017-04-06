@@ -36,71 +36,55 @@
 			</table>
 		</div>
 		<!--Do not edit the zone above. This is the uniform header.-->
-		<div class="edge">
-			<header>
-			<h1 align="center">Experience Dv Clubs</h1>
-			</header>
-			<hr>	
-				<img src="/images/picture icon.png" alt="Moutain View" style="width:304px;height:228px;">
-			<p>Missed the Club Fair<br>Don't worry<br>Here in this page, you can acess information about all the clubs here at Da Vinci.Once you figured out what clubs you want to take part in, you can go and sign-up here in this page</p>
-	
-			<hr>
-	
-			<p>The Clubs</p>
-			<hr width="60%">
+		<div data-uk-slideshow>
+  <ul class="uk-slideshow uk-slideshow-fullscreen">
+    <li>
+      <img src="https://download.unsplash.com/photo-1414446483597-8d8f792bfe39">
+      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle">
+        <div class="caption">
+          <h3>Debate Club</h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="https://download.unsplash.com/photo-1417870839255-a23faa90c6b0">
+      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle">
+        <div class="caption">
+          <h3>Andy Club</h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="https://unsplash.com/photos/34mvN5nt1ls/download">
+      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle">
+        <div class="caption">
+          <h3>Archery</h3>
+          <p></p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <img src="https://download.unsplash.com/photo-1428550670225-15f007f6f1ba">
+      <div class="uk-overlay-panel uk-overlay-background uk-overlay-fade uk-flex uk-flex-center uk-flex-middle">
+        <div class="caption">
+          <h3>Example 4</h3>
+          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <ul class="uk-dotnav uk-dotnav-contrast uk-position-top uk-flex-center">
+    <li data-uk-slideshow-item="0"><a href=""></a></li>
+    <li data-uk-slideshow-item="1"><a href=""></a></li>
+    <li data-uk-slideshow-item="2"><a href=""></a></li>
+    <li data-uk-slideshow-item="3"><a href=""></a></li>
+  </ul>
+</div>
+			
 
-		<body ng-app='app' ng-controller='MainController'>
-  <main id='main'>
-    <section id='one'>
-      <div class='pane'
-           ng-repeat='forest in forests track by $index'
-           ng-if="$index == active">
-          <main>
-              <h1 ng-style="{'background-image' : 'url(' + forest.img + ')'}">{{ forest.rank }}</h1>
-          </main>
-          <div class="bg" ng-style="{'background-image' : 'url(' + forest.img + ')'}"></div>
-      </div>
-    </section>
-    <section id='two'>
-      <div class='pane'
-           ng-repeat='forest in forests track by $index'
-           ng-class="{ 'active' : $index == active }"
-           ng-if="$index == active">
-        <main>
-            <h2>{{ forest.name }}</h2>
-            <p>{{ forest.desc }}</p>
-            <p class='sub'>{{ forest.location }}</p>
-        </main>
-      </div>
-    </section>
-  </main>
-  <nav id='nav'>
-    <ul>
-      <li class="previous" ng-show="active > 0">
-        <a href='#' ng-click="previous()">
-          <span class='icon icon_arrow-left'></span>
-        </a>
-      </li>
-      <li class='numbers'>
-        <a href='#' ng-repeat="forest in forests track by $index" ng-click="setActive($index)" ng-class="{'active' : $index == active}">
-          {{ $index + 1 }}
-        </a>
-      </li>
-      <li class="next" ng-show="active + 1 < forests.length">
-        <a href='#' ng-click="next()">
-          <span class='icon icon_arrow-right'></span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-    <div id="preloader">
-        <img src="http://3.bp.blogspot.com/-fcr_XPbP8_g/V8pSvMu0RjI/AAAAAAAADwk/fSI93vc4JWcOw--jiIq6JjQWf1hOokQ7wCLcB/s1600/debate.png" alt="" />
-        <img src="https://s-media-cache-ak0.pinimg.com/originals/05/c5/70/05c57019bc873a9cbe3cf7d4136f0299.jpg" alt="" />
-        <img src="http://www.roundtopswim.com/wp-content/uploads/2015/02/archerytargets1.jpg" alt="" />
-        <img src="https://blog.oup.com/wp-content/uploads/2015/07/1260-microphone.jpg" alt="" />
-        <img src="https://media.licdn.com/media/p/8/005/08a/35c/274939f.png" alt="" />
-    </div>
-</body>
+		
 			
 			
 		
