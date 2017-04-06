@@ -1,1 +1,23 @@
+.uk-position-top {
+	top: 15px;
+}
 
+.caption {
+	background: rgba(0, 0, 0, .5);
+	padding: 20px;
+}
+
+h3 {
+	font-size: 2.2em;
+	font-weight: bold;
+	line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+.uk-overlay-panel a:not([class]) {
+	text-decoration: none;
+	padding: 7px 10px;
+	background: #8E001C;
+	text-transform: capitalize;
+	display: inline-block;	
+}
