@@ -50,70 +50,57 @@
 			<p>The Clubs</p>
 			<hr width="60%">
 
-		<div class="w3-container">
-
-		<div class="w3-content w3-display-container">
-
-		<div class="w3-display-container mySlides">
-  			    <img src="/images/debate.jpg" style="width:100%">
-  		<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-  		Dv Debate Club
-  		</div>
-		</div>
-
-		<div class="w3-display-container mySlides">
-  			    <img src="/images/amime.jpg" style="width:100%">
- 		<div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-  		Anime Club
- 		 </div>
-		 </div>
-
-		<div class="w3-display-container mySlides">
-  			    <img src="/images/archery.jpg" style="width:100%">
- 		 <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
-    		Archery Club
-  		</div>
-		</div>
-
-		<div class="w3-display-container mySlides">
-		            <img src="/images/vocal 101.jpg" style="width:100%">
-  		<div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-  		Vocal 101
- 		</div>
-		</div>
-
-		<div class="w3-display-container mySlides">
-			    <img src="" style="width:100%">
-  		<div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
-  		Girls Code 
- 		</div>
-		</div>
-
-		<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-		<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-		</div>
-
-		<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
- 		showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
- 		 var i;
-  		var x = document.getElementsByClassName("mySlides");
- 		 if (n > x.length) {slideIndex = 1}    
-  		 if (n < 1) {slideIndex = x.length}
- 		 for (i = 0; i < x.length; i++) {
-    		 x[i].style.display = "none";  
- 		 }
- 		 x[slideIndex-1].style.display = "block";  
-		 }
-</script>
-</html>
+		<body ng-app='app' ng-controller='MainController'>
+  <main id='main'>
+    <section id='one'>
+      <div class='pane'
+           ng-repeat='forest in forests track by $index'
+           ng-if="$index == active">
+          <main>
+              <h1 ng-style="{'background-image' : 'url(' + forest.img + ')'}">{{ forest.rank }}</h1>
+          </main>
+          <div class="bg" ng-style="{'background-image' : 'url(' + forest.img + ')'}"></div>
+      </div>
+    </section>
+    <section id='two'>
+      <div class='pane'
+           ng-repeat='forest in forests track by $index'
+           ng-class="{ 'active' : $index == active }"
+           ng-if="$index == active">
+        <main>
+            <h2>{{ forest.name }}</h2>
+            <p>{{ forest.desc }}</p>
+            <p class='sub'>{{ forest.location }}</p>
+        </main>
+      </div>
+    </section>
+  </main>
+  <nav id='nav'>
+    <ul>
+      <li class="previous" ng-show="active > 0">
+        <a href='#' ng-click="previous()">
+          <span class='icon icon_arrow-left'></span>
+        </a>
+      </li>
+      <li class='numbers'>
+        <a href='#' ng-repeat="forest in forests track by $index" ng-click="setActive($index)" ng-class="{'active' : $index == active}">
+          {{ $index + 1 }}
+        </a>
+      </li>
+      <li class="next" ng-show="active + 1 < forests.length">
+        <a href='#' ng-click="next()">
+          <span class='icon icon_arrow-right'></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    <div id="preloader">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sagano.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/sequoia.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/redwoods.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/black-forest.jpg" alt="" />
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130891/crooked-forest.jpg" alt="" />
+    </div>
 </body>
 			
 			
