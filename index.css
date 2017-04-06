@@ -11,6 +11,11 @@ h1{
 p {
 	font-size: 15pt;
 }
+.edge {
+	margin-top: 2%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
 
 /*Everything below this point is intergral to the header working. Please do not change anything. Thank you.*/
 
