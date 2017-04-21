@@ -2,3 +2,10 @@ p{
   font-weight: bold;
   font-size: 80;
 }
+hr{
+  background-color: dimgrey;
+    color: dimgrey;
+    border: solid 2px;
+    height: 5px;
+    width: 1000px ;
+}
