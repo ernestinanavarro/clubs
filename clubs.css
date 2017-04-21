@@ -2,6 +2,7 @@ body{
   background-color:#a880ff;
 }
 p{
+  font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   font-size: 200%;
   text-align: middle;
@@ -14,7 +15,11 @@ hr{
     width: 1000px ;
 }
 h1{
-  font-family:;
-  font-size: 80%;
+  font-family: "Playfair Display";
+	font-size: 18px;
+	font-style: oblique;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18px;
 }
   
